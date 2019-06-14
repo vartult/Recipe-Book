@@ -1,0 +1,154 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-21:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/25a6a9b4dbc2d6cd02f5e41001887e0f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/vartul/.gradle/caches/transforms-2/files-2.1/74bc19f60d63e1ebf845c8fe90372a75/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/7ea4d034f481d46f6628594d18e1faf5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/f3b5c2d32815337da416c470e23d60e5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/f8782663cb2612eef99613a1930a43a6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/3e8e7a98816d2c446722b0361aa73ab5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/bcda39b8b1c1ea711f92b00db9025aa9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/6d0cdf7458d4943c01a8d0482e7a0d40/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/2d6407845d73767113246d95f7bd86dc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/85b008874233edef3a164e5cc0591ac6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/7584546220222aeb17893fca2a2051ff/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/4efe00048f85fe563a493ea1ca96d5cd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/ef2a6b3771c0960290ccfbee64927195/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/a7c2c89131f03fcd4879a02c155fa100/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/8dbdd95cea0f111d023e6e9991f47b56/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/8a85bf975bbe77af9be3c378db9b0b8f/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/577a3e5d9f90739b938e78b63e7679d8/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/0a0debaefbd4d43f37e7119fd88bcd48/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/vartul/.gradle/caches/transforms-2/files-2.1/416dedb038f63e5b75f151a015edc77b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/803f5c7e0543462dd522d7ee4bcc3efe/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/5bb361faad577d44118de32a26eb79ff/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/b3de7d90ba09ccf4f719768a6e95e85a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/vartul/.gradle/caches/transforms-2/files-2.1/80ffddb70b888db51335386e51583f81/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/vartul/.gradle/caches/transforms-2/files-2.1/6fe39449fb5a8bec84bafd243a07952a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/vartul/.gradle/caches/transforms-2/files-2.1/017db131c2857828ff3c67b135e68580/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /home/vartul/.gradle/caches/transforms-2/files-2.1/6e019c214c6b715d8aab7f21a009753d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/a2ebece80176a88d2600ff8b4658d6ff/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:3:5-31
+		INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
+		INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
+		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
+		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:5:5-19:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/vartul/.gradle/caches/transforms-2/files-2.1/74bc19f60d63e1ebf845c8fe90372a75/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/vartul/.gradle/caches/transforms-2/files-2.1/74bc19f60d63e1ebf845c8fe90372a75/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/8a85bf975bbe77af9be3c378db9b0b8f/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/8a85bf975bbe77af9be3c378db9b0b8f/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/577a3e5d9f90739b938e78b63e7679d8/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/577a3e5d9f90739b938e78b63e7679d8/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/8a85bf975bbe77af9be3c378db9b0b8f/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.cellfishpool.MainActivity
+ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
+INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/25a6a9b4dbc2d6cd02f5e41001887e0f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/25a6a9b4dbc2d6cd02f5e41001887e0f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/vartul/.gradle/caches/transforms-2/files-2.1/74bc19f60d63e1ebf845c8fe90372a75/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/vartul/.gradle/caches/transforms-2/files-2.1/74bc19f60d63e1ebf845c8fe90372a75/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/7ea4d034f481d46f6628594d18e1faf5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/7ea4d034f481d46f6628594d18e1faf5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/f3b5c2d32815337da416c470e23d60e5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/f3b5c2d32815337da416c470e23d60e5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/f8782663cb2612eef99613a1930a43a6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/f8782663cb2612eef99613a1930a43a6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/3e8e7a98816d2c446722b0361aa73ab5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/3e8e7a98816d2c446722b0361aa73ab5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/bcda39b8b1c1ea711f92b00db9025aa9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/bcda39b8b1c1ea711f92b00db9025aa9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/6d0cdf7458d4943c01a8d0482e7a0d40/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/6d0cdf7458d4943c01a8d0482e7a0d40/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/2d6407845d73767113246d95f7bd86dc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/2d6407845d73767113246d95f7bd86dc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/85b008874233edef3a164e5cc0591ac6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/85b008874233edef3a164e5cc0591ac6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/7584546220222aeb17893fca2a2051ff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/7584546220222aeb17893fca2a2051ff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/4efe00048f85fe563a493ea1ca96d5cd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/4efe00048f85fe563a493ea1ca96d5cd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/ef2a6b3771c0960290ccfbee64927195/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/ef2a6b3771c0960290ccfbee64927195/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/a7c2c89131f03fcd4879a02c155fa100/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/a7c2c89131f03fcd4879a02c155fa100/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/8dbdd95cea0f111d023e6e9991f47b56/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/8dbdd95cea0f111d023e6e9991f47b56/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/8a85bf975bbe77af9be3c378db9b0b8f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/8a85bf975bbe77af9be3c378db9b0b8f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/577a3e5d9f90739b938e78b63e7679d8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/577a3e5d9f90739b938e78b63e7679d8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/0a0debaefbd4d43f37e7119fd88bcd48/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/0a0debaefbd4d43f37e7119fd88bcd48/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/vartul/.gradle/caches/transforms-2/files-2.1/416dedb038f63e5b75f151a015edc77b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/vartul/.gradle/caches/transforms-2/files-2.1/416dedb038f63e5b75f151a015edc77b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/803f5c7e0543462dd522d7ee4bcc3efe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/803f5c7e0543462dd522d7ee4bcc3efe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/5bb361faad577d44118de32a26eb79ff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/5bb361faad577d44118de32a26eb79ff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/b3de7d90ba09ccf4f719768a6e95e85a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/b3de7d90ba09ccf4f719768a6e95e85a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/vartul/.gradle/caches/transforms-2/files-2.1/80ffddb70b888db51335386e51583f81/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/vartul/.gradle/caches/transforms-2/files-2.1/80ffddb70b888db51335386e51583f81/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/vartul/.gradle/caches/transforms-2/files-2.1/6fe39449fb5a8bec84bafd243a07952a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/vartul/.gradle/caches/transforms-2/files-2.1/6fe39449fb5a8bec84bafd243a07952a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/vartul/.gradle/caches/transforms-2/files-2.1/017db131c2857828ff3c67b135e68580/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/vartul/.gradle/caches/transforms-2/files-2.1/017db131c2857828ff3c67b135e68580/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/vartul/.gradle/caches/transforms-2/files-2.1/6e019c214c6b715d8aab7f21a009753d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/vartul/.gradle/caches/transforms-2/files-2.1/6e019c214c6b715d8aab7f21a009753d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/a2ebece80176a88d2600ff8b4658d6ff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/a2ebece80176a88d2600ff8b4658d6ff/AndroidManifest.xml:20:5-44
+INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
+INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
+		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
+		INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
+		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
+		INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
