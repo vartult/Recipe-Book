@@ -669,6 +669,7 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chooser_view_content
+id activity_container
 id add
 id alertTitle
 id all
@@ -708,6 +709,7 @@ id forever
 id gone
 id group_divider
 id groups
+id hello
 id home
 id homeAsUp
 id icon
@@ -735,6 +737,7 @@ id packed
 id parent
 id parentPanel
 id percent
+id progress
 id progress_circular
 id progress_horizontal
 id radio
@@ -824,6 +827,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_base
 layout activity_main
 layout notification_action
 layout notification_action_tombstone
