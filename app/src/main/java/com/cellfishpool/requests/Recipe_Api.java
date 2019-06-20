@@ -8,7 +8,7 @@ import retrofit2.http.GET;
 import retrofit2.http.Query;
 
 public interface Recipe_Api {
-    public interface RecipeApi {
+
 
         // SEARCH
         @GET("api/search")
@@ -24,5 +24,5 @@ public interface Recipe_Api {
                 @Query("key") String key,
                 @Query("rId") String recipe_id
         );
-    }
+
 }

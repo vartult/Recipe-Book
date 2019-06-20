@@ -9,11 +9,11 @@ import java.util.List;
 public class RecipeSearchResponse {
 
     @SerializedName("count")
-    @Expose
+    @Expose()
     private int count;
 
-    @SerializedName("recipe")
-    @Expose
+    @SerializedName("recipes")
+    @Expose()
     private List<Recipe> recipes;
 
     public int getCount() {
@@ -22,5 +22,13 @@ public class RecipeSearchResponse {
 
     public List<Recipe> getRecipes() {
         return recipes;
+    }
+
+    @Override
+    public String toString() {
+        return "RecipeSearchResponse{" +
+                "count=" + count +
+                ", recipes=" + recipes +
+                '}';
     }
 }

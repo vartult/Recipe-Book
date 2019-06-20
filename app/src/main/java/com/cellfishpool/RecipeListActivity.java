@@ -2,8 +2,28 @@ package com.cellfishpool;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.cellfishpool.models.Recipe;
+import com.cellfishpool.requests.Recipe_Api;
+import com.cellfishpool.requests.ServiceGenerator;
+import com.cellfishpool.requests.responses.RecipeResponse;
+import com.cellfishpool.requests.responses.RecipeSearchResponse;
+import com.cellfishpool.util.constants;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.http.Query;
+import timber.log.Timber;
 
 public class RecipeListActivity extends Base_Activity {
 
@@ -12,18 +32,56 @@ public class RecipeListActivity extends Base_Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView mhello =findViewById(R.id.hello);
+        Button hello =findViewById(R.id.hello);
 
-        mhello.setOnClickListener(new View.OnClickListener() {
+        hello.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(mProgressBar.getVisibility()==View.VISIBLE){
-                    showProgressBar(false);
-                }
-                else{
-                    showProgressBar(true);
-                }
+                Toast.makeText(getApplicationContext(),"Test",Toast.LENGTH_SHORT).show();
+                testRetrofitRequest();
             }
         });
+    }
+
+    private void testRetrofitRequest(){
+        Recipe_Api recipe_api= ServiceGenerator.getRecipeApi();
+
+        Call<RecipeSearchResponse> responseCall= recipe_api.searchRecipe(
+                constants.API_Key,
+                "Bread",
+                "1"
+        );
+
+        responseCall.enqueue(new Callback<RecipeSearchResponse>() {
+            @Override
+            public void onResponse(Call<RecipeSearchResponse> call, Response<RecipeSearchResponse> response) {
+                //Log.d("Hello","Response Server %s"+ response.toString());
+                Timber.d("Response Server %s", response.toString());
+                if(response.code()==200){
+                    //Log.d("Hello", "Response"+response.body().toString());
+                    Timber.d("Response came %s", response.body().toString());
+                    if(response.body().getRecipes()!=null){
+                    List<Recipe> recipes = new ArrayList<>(response.body().getRecipes());
+                    for(Recipe i: recipes){
+                        Timber.d("response is %s", i.getTitle());
+                    }}
+                }
+                else{
+
+                    Toast.makeText(getApplicationContext()," not rUNNING PROPERLY",Toast.LENGTH_LONG).show();
+                    try{
+                        Timber.d(response.errorBody().string());
+                    }catch (IOException e){
+                        e.printStackTrace();
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(Call<RecipeSearchResponse> call, Throwable t) {
+
+            }
+        });
+
     }
 }
