@@ -93,7 +93,7 @@ public class RecipeListActivity extends Base_Activity {
 
         Call<RecipeResponse> recipeResponse= recipe_api.getRecipe(
                 constants.API_Key,
-                "8c0314"
+                "12345"
         );
 
         recipeResponse.enqueue(new Callback<RecipeResponse>() {
