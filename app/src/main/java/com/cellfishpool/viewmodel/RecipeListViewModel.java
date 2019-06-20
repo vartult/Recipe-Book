@@ -8,19 +8,22 @@ import android.arch.lifecycle.ViewModel;
 import android.support.annotation.NonNull;
 
 import com.cellfishpool.models.Recipe;
+import com.cellfishpool.repository.RecipeRepository;
 
 import java.util.List;
 
 public class RecipeListViewModel extends ViewModel {
 
-    private MutableLiveData<List<Recipe>> mRecipes = new MutableLiveData<>();
+    private RecipeRepository mRecipeRepository;
+
+    //private MutableLiveData<List<Recipe>> mRecipes = new MutableLiveData<>();
 
     public RecipeListViewModel() {
-
+        mRecipeRepository= RecipeRepository.getInstance();
     }
 
     public LiveData<List<Recipe>> getRecipes() {
-        return mRecipes;
+        return mRecipeRepository.getRecipes();
     }
 
 }

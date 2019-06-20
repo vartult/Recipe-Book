@@ -1,5 +1,9 @@
 package com.cellfishpool;
 
+import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProvider;
+import android.arch.lifecycle.ViewModelProviders;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,6 +18,7 @@ import com.cellfishpool.requests.ServiceGenerator;
 import com.cellfishpool.requests.responses.RecipeResponse;
 import com.cellfishpool.requests.responses.RecipeSearchResponse;
 import com.cellfishpool.util.constants;
+import com.cellfishpool.viewmodel.RecipeListViewModel;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -27,22 +32,29 @@ import timber.log.Timber;
 
 public class RecipeListActivity extends Base_Activity {
 
+    private RecipeListViewModel mRecipeListViewModel;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mRecipeListViewModel = ViewModelProviders.of(this).get(RecipeListViewModel.class);
+
         Button hello =findViewById(R.id.hello);
 
-        hello.setOnClickListener(new View.OnClickListener() {
+    }
+
+    private void subscribeObservers(){
+
+        mRecipeListViewModel.getRecipes().observe(this, new Observer<List<Recipe>>() {
             @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Test",Toast.LENGTH_SHORT).show();
-                //testRetrofitRequest();
-                RetrofitRecipeCheck();
+            public void onChanged(@Nullable List<Recipe> recipes) {
+
             }
         });
     }
+
 
     private void testRetrofitRequest(){
         Recipe_Api recipe_api= ServiceGenerator.getRecipeApi();
