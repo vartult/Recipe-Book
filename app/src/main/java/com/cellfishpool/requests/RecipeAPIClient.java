@@ -39,17 +39,19 @@ public class RecipeAPIClient {
         return mRecipes;
     }
 
+    
     public void searchRecipesAPI(String query, int pageNumber){
-        if(mretrieveRecipesRunnable!=null){
-            mretrieveRecipesRunnable=null;
-
+        if(mretrieveRecipesRunnable != null){
+            mretrieveRecipesRunnable = null;
         }
+        mretrieveRecipesRunnable = new RetrieveRecipesRunnable(query, pageNumber);
         final Future handler = AppExecutors.getInstance().NetworkIO().submit(mretrieveRecipesRunnable);
 
+        // Set a timeout for the data refresh
         AppExecutors.getInstance().NetworkIO().schedule(new Runnable() {
             @Override
             public void run() {
-                //cancel process after 4 seconds
+                // let the user know it timed out
                 handler.cancel(true);
             }
         }, Constants.NETWORK_TIMEOUT, TimeUnit.MILLISECONDS);
