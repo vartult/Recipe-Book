@@ -5,6 +5,7 @@ import android.arch.lifecycle.ViewModelProviders;
 import android.support.annotation.Nullable;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -35,8 +36,16 @@ public class RecipeListActivity extends Base_Activity {
         setContentView(R.layout.activity_main);
 
         mRecipeListViewModel = ViewModelProviders.of(this).get(RecipeListViewModel.class);
+        subscribeObservers();
 
         Button hello =findViewById(R.id.hello);
+
+        hello.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                testRetrofitRequest();
+            }
+        });
 
     }
 
@@ -45,91 +54,23 @@ public class RecipeListActivity extends Base_Activity {
         mRecipeListViewModel.getRecipes().observe(this, new Observer<List<Recipe>>() {
             @Override
             public void onChanged(@Nullable List<Recipe> recipes) {
+                if(recipes!=null){
+                    for(Recipe i: recipes){
+                        Log.d("Hello", "Live data: "+ i.getTitle());
+                    }
+                }
 
             }
         });
     }
 
+    private void searchRecipeApi(String query, Integer pageNumber){
+
+        mRecipeListViewModel.searchRecipesApi(query,pageNumber);
+    }
 
     private void testRetrofitRequest(){
-        Recipe_Api recipe_api= ServiceGenerator.getRecipeApi();
-
-        Call<RecipeSearchResponse> responseCall= recipe_api.searchRecipe(
-                Constants.API_Key,
-                "Bread",
-                "1"
-        );
-
-        responseCall.enqueue(new Callback<RecipeSearchResponse>() {
-            @Override
-            public void onResponse(Call<RecipeSearchResponse> call, Response<RecipeSearchResponse> response) {
-                Log.d("Hello","Response Server %s"+ response.toString());
-                //Timber.d("Response Server %s", response.toString());
-                if(response.code()==200){
-                    Toast.makeText(getApplicationContext(),"rUNNING PROPERLY",Toast.LENGTH_LONG).show();
-                    Log.d("Hello", "Response"+response.body().toString());
-                    //Timber.d(String.format("Response came %s", response.body().toString()));
-                    if(response.body().getRecipes()!=null){
-                    List<Recipe> recipes = new ArrayList<>(response.body().getRecipes());
-                    for(Recipe recipe: recipes){
-
-                        Log.d("Hello","response is %s" + recipe.toString());
-                    }}
-                }
-                else{
-
-                    Toast.makeText(getApplicationContext()," not rUNNING PROPERLY",Toast.LENGTH_LONG).show();
-                    try{
-                        Timber.d(response.errorBody().string());
-                    }catch (IOException e){
-                        e.printStackTrace();
-                    }
-                }
-            }
-
-            @Override
-            public void onFailure(Call<RecipeSearchResponse> call, Throwable t) {
-
-            }
-        });
-
+        searchRecipeApi("Bread",1);
     }
 
-    private void RetrofitRecipeCheck(){
-        Recipe_Api recipe_api= ServiceGenerator.getRecipeApi();
-
-        Call<RecipeResponse> recipeResponse= recipe_api.getRecipe(
-                Constants.API_Key,
-                "12345"
-        );
-
-        recipeResponse.enqueue(new Callback<RecipeResponse>() {
-
-            @Override
-            public void onResponse(Call<RecipeResponse> call, Response<RecipeResponse> response) {
-                Log.d("Hello", "Response"+response.toString());
-                if(response.code()==200){
-                    Log.d("Hello", "Response"+response.body().toString());
-                    //Timber.d(String.format("Response came %s", response.body().toString()));
-                        Recipe recipe=response.body().getRecipe();
-                        Log.d("Hello","Response "+recipe.toString());
-
-                }
-                else{
-
-                    Toast.makeText(getApplicationContext()," not rUNNING PROPERLY",Toast.LENGTH_LONG).show();
-                    try{
-                        Timber.d(response.errorBody().string());
-                    }catch (IOException e){
-                        e.printStackTrace();
-                    }
-                }
-            }
-
-            @Override
-            public void onFailure(Call<RecipeResponse> call, Throwable t) {
-
-            }
-        });
-    }
 }
