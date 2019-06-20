@@ -1,13 +1,13 @@
 package com.cellfishpool.requests;
 
-import com.cellfishpool.util.constants;
+import com.cellfishpool.util.Constants;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ServiceGenerator {
     private static Retrofit.Builder retrofitBuilder= new Retrofit.Builder()
-            .baseUrl(constants.base_URL)
+            .baseUrl(Constants.base_URL)
             .addConverterFactory(GsonConverterFactory.create());
 
     private static Retrofit retrofit = retrofitBuilder.build();

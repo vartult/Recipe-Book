@@ -1,15 +1,11 @@
 package com.cellfishpool;
 
 import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProvider;
 import android.arch.lifecycle.ViewModelProviders;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cellfishpool.models.Recipe;
@@ -17,7 +13,7 @@ import com.cellfishpool.requests.Recipe_Api;
 import com.cellfishpool.requests.ServiceGenerator;
 import com.cellfishpool.requests.responses.RecipeResponse;
 import com.cellfishpool.requests.responses.RecipeSearchResponse;
-import com.cellfishpool.util.constants;
+import com.cellfishpool.util.Constants;
 import com.cellfishpool.viewmodel.RecipeListViewModel;
 
 import java.io.IOException;
@@ -27,7 +23,6 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.http.Query;
 import timber.log.Timber;
 
 public class RecipeListActivity extends Base_Activity {
@@ -60,7 +55,7 @@ public class RecipeListActivity extends Base_Activity {
         Recipe_Api recipe_api= ServiceGenerator.getRecipeApi();
 
         Call<RecipeSearchResponse> responseCall= recipe_api.searchRecipe(
-                constants.API_Key,
+                Constants.API_Key,
                 "Bread",
                 "1"
         );
@@ -104,7 +99,7 @@ public class RecipeListActivity extends Base_Activity {
         Recipe_Api recipe_api= ServiceGenerator.getRecipeApi();
 
         Call<RecipeResponse> recipeResponse= recipe_api.getRecipe(
-                constants.API_Key,
+                Constants.API_Key,
                 "12345"
         );
 
