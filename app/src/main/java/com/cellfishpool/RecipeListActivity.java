@@ -55,15 +55,17 @@ public class RecipeListActivity extends Base_Activity {
         responseCall.enqueue(new Callback<RecipeSearchResponse>() {
             @Override
             public void onResponse(Call<RecipeSearchResponse> call, Response<RecipeSearchResponse> response) {
-                //Log.d("Hello","Response Server %s"+ response.toString());
+                Log.d("Hello","Response Server %s"+ response.toString());
                 Timber.d("Response Server %s", response.toString());
                 if(response.code()==200){
-                    //Log.d("Hello", "Response"+response.body().toString());
-                    Timber.d("Response came %s", response.body().toString());
+                    Toast.makeText(getApplicationContext(),"rUNNING PROPERLY",Toast.LENGTH_LONG).show();
+                    Log.d("Hello", "Response"+response.body().toString());
+                    //Timber.d(String.format("Response came %s", response.body().toString()));
                     if(response.body().getRecipes()!=null){
                     List<Recipe> recipes = new ArrayList<>(response.body().getRecipes());
                     for(Recipe i: recipes){
-                        Timber.d("response is %s", i.getTitle());
+
+                        Log.d("Hello","response is %s" + i.toString());
                     }}
                 }
                 else{
