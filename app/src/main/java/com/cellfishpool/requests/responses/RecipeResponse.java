@@ -13,4 +13,11 @@ public class RecipeResponse {
     public Recipe getRecipe() {
         return recipe;
     }
+
+    @Override
+    public String toString() {
+        return "RecipeResponse{" +
+                "recipe=" + recipe +
+                '}';
+    }
 }

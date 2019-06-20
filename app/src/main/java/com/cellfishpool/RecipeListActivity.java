@@ -38,7 +38,8 @@ public class RecipeListActivity extends Base_Activity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(),"Test",Toast.LENGTH_SHORT).show();
-                testRetrofitRequest();
+                //testRetrofitRequest();
+                RetrofitRecipeCheck();
             }
         });
     }
@@ -56,16 +57,16 @@ public class RecipeListActivity extends Base_Activity {
             @Override
             public void onResponse(Call<RecipeSearchResponse> call, Response<RecipeSearchResponse> response) {
                 Log.d("Hello","Response Server %s"+ response.toString());
-                Timber.d("Response Server %s", response.toString());
+                //Timber.d("Response Server %s", response.toString());
                 if(response.code()==200){
                     Toast.makeText(getApplicationContext(),"rUNNING PROPERLY",Toast.LENGTH_LONG).show();
                     Log.d("Hello", "Response"+response.body().toString());
                     //Timber.d(String.format("Response came %s", response.body().toString()));
                     if(response.body().getRecipes()!=null){
                     List<Recipe> recipes = new ArrayList<>(response.body().getRecipes());
-                    for(Recipe i: recipes){
+                    for(Recipe recipe: recipes){
 
-                        Log.d("Hello","response is %s" + i.toString());
+                        Log.d("Hello","response is %s" + recipe.toString());
                     }}
                 }
                 else{
@@ -85,5 +86,43 @@ public class RecipeListActivity extends Base_Activity {
             }
         });
 
+    }
+
+    private void RetrofitRecipeCheck(){
+        Recipe_Api recipe_api= ServiceGenerator.getRecipeApi();
+
+        Call<RecipeResponse> recipeResponse= recipe_api.getRecipe(
+                constants.API_Key,
+                "8c0314"
+        );
+
+        recipeResponse.enqueue(new Callback<RecipeResponse>() {
+
+            @Override
+            public void onResponse(Call<RecipeResponse> call, Response<RecipeResponse> response) {
+                Log.d("Hello", "Response"+response.toString());
+                if(response.code()==200){
+                    Log.d("Hello", "Response"+response.body().toString());
+                    //Timber.d(String.format("Response came %s", response.body().toString()));
+                        Recipe recipe=response.body().getRecipe();
+                        Log.d("Hello","Response "+recipe.toString());
+
+                }
+                else{
+
+                    Toast.makeText(getApplicationContext()," not rUNNING PROPERLY",Toast.LENGTH_LONG).show();
+                    try{
+                        Timber.d(response.errorBody().string());
+                    }catch (IOException e){
+                        e.printStackTrace();
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(Call<RecipeResponse> call, Throwable t) {
+
+            }
+        });
     }
 }
