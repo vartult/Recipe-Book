@@ -4,6 +4,7 @@ ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidMan
 INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-23:12
 INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-23:12
 INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-23:12
+MERGED from [com.android.support:design:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/acaccae8459b0b33ad1fa220ecaa94a0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/25a6a9b4dbc2d6cd02f5e41001887e0f/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/vartul/.gradle/caches/transforms-2/files-2.1/74bc19f60d63e1ebf845c8fe90372a75/AndroidManifest.xml:2:1-11:12
 MERGED from [com.jakewharton.timber:timber:4.7.1] /home/vartul/.gradle/caches/transforms-2/files-2.1/4b9998e9f30fb053717ded07bf88b47f/AndroidManifest.xml:2:1-9:12
@@ -16,6 +17,7 @@ MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/vartul/.
 MERGED from [com.android.support:support-core-ui:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/f8782663cb2612eef99613a1930a43a6/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/3e8e7a98816d2c446722b0361aa73ab5/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/bcda39b8b1c1ea711f92b00db9025aa9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/0ceef35dfb53d8a63f1aebd665848980/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:loader:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/6d0cdf7458d4943c01a8d0482e7a0d40/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:viewpager:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/2d6407845d73767113246d95f7bd86dc/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/85b008874233edef3a164e5cc0591ac6/AndroidManifest.xml:17:1-22:12
@@ -60,6 +62,8 @@ ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidMan
 		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:4:22-64
 application
 ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:6:5-21:19
+MERGED from [com.android.support:design:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/acaccae8459b0b33ad1fa220ecaa94a0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/acaccae8459b0b33ad1fa220ecaa94a0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/vartul/.gradle/caches/transforms-2/files-2.1/74bc19f60d63e1ebf845c8fe90372a75/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/vartul/.gradle/caches/transforms-2/files-2.1/74bc19f60d63e1ebf845c8fe90372a75/AndroidManifest.xml:9:5-20
 MERGED from [com.jakewharton.timber:timber:4.7.1] /home/vartul/.gradle/caches/transforms-2/files-2.1/4b9998e9f30fb053717ded07bf88b47f/AndroidManifest.xml:7:5-20
@@ -108,6 +112,8 @@ uses-sdk
 INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
 INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/acaccae8459b0b33ad1fa220ecaa94a0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/acaccae8459b0b33ad1fa220ecaa94a0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/25a6a9b4dbc2d6cd02f5e41001887e0f/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/25a6a9b4dbc2d6cd02f5e41001887e0f/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/vartul/.gradle/caches/transforms-2/files-2.1/74bc19f60d63e1ebf845c8fe90372a75/AndroidManifest.xml:5:5-7:41
@@ -132,6 +138,8 @@ MERGED from [com.android.support:support-core-utils:28.0.0] /home/vartul/.gradle
 MERGED from [com.android.support:support-core-utils:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/3e8e7a98816d2c446722b0361aa73ab5/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/bcda39b8b1c1ea711f92b00db9025aa9/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/bcda39b8b1c1ea711f92b00db9025aa9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/0ceef35dfb53d8a63f1aebd665848980/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/0ceef35dfb53d8a63f1aebd665848980/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:loader:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/6d0cdf7458d4943c01a8d0482e7a0d40/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:loader:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/6d0cdf7458d4943c01a8d0482e7a0d40/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:viewpager:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/2d6407845d73767113246d95f7bd86dc/AndroidManifest.xml:20:5-44
