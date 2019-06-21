@@ -1,0 +1,30 @@
+package com.cellfishpool.adapters;
+
+import android.support.annotation.NonNull;
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.TextView;
+
+import com.cellfishpool.R;
+
+public class CategoryViewHolder extends RecyclerView.ViewHolder implements
+        View.OnClickListener
+{
+    CircleImageView categoryImage;
+    TextView categoryTitle;
+    OnRecipeListener listener;
+
+    public CategoryViewHolder(@NonNull View itemView, OnRecipeListener onRecipeListener) {
+        super(itemView);
+        categoryImage = itemView.findViewById(R.id.category_image);
+        categoryTitle = itemView.findViewById(R.id.category_title);
+        listener = onRecipeListener;
+
+        itemView.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View view) {
+        listener.onCategoryClick(categoryTitle.getText().toString());
+    }
+}

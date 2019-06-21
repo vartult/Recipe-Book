@@ -12,6 +12,7 @@ MERGED from [android.arch.lifecycle:extensions:1.1.1] /home/vartul/.gradle/cache
 MERGED from [com.android.support:cardview-v7:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/efb7602299aac060f3ef6d2017e1949b/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/f4f92453faf2a55b0e1a10e7b777035e/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/1f247e3e0966e91549990c112adeff8a/AndroidManifest.xml:2:1-12:12
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/c8c9d9698c775a5809a00a9f5f6df22f/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-fragment:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/7ea4d034f481d46f6628594d18e1faf5/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/f3b5c2d32815337da416c470e23d60e5/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/f8782663cb2612eef99613a1930a43a6/AndroidManifest.xml:17:1-22:12
@@ -72,6 +73,8 @@ MERGED from [android.arch.lifecycle:extensions:1.1.1] /home/vartul/.gradle/cache
 MERGED from [android.arch.lifecycle:extensions:1.1.1] /home/vartul/.gradle/caches/transforms-2/files-2.1/ff35f76e6916c964e5789e02476b0c6a/AndroidManifest.xml:22:5-28:19
 MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/1f247e3e0966e91549990c112adeff8a/AndroidManifest.xml:10:5-20
 MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/1f247e3e0966e91549990c112adeff8a/AndroidManifest.xml:10:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/c8c9d9698c775a5809a00a9f5f6df22f/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/c8c9d9698c775a5809a00a9f5f6df22f/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-compat:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/8a85bf975bbe77af9be3c378db9b0b8f/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/8a85bf975bbe77af9be3c378db9b0b8f/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:versionedparcelable:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/577a3e5d9f90739b938e78b63e7679d8/AndroidManifest.xml:22:5-23:19
@@ -128,6 +131,8 @@ MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/vartul/.gradle/ca
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/f4f92453faf2a55b0e1a10e7b777035e/AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/1f247e3e0966e91549990c112adeff8a/AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/1f247e3e0966e91549990c112adeff8a/AndroidManifest.xml:6:5-8:41
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/c8c9d9698c775a5809a00a9f5f6df22f/AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/c8c9d9698c775a5809a00a9f5f6df22f/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:support-fragment:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/7ea4d034f481d46f6628594d18e1faf5/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/7ea4d034f481d46f6628594d18e1faf5/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/f3b5c2d32815337da416c470e23d60e5/AndroidManifest.xml:20:5-44
