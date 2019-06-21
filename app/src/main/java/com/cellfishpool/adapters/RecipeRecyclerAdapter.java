@@ -37,17 +37,23 @@ public class RecipeRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.Vie
 
         Glide.with(((RecipeViewHolder) viewHolder).itemView)
                 .setDefaultRequestOptions(options)
-                .load(mRecipes.get(i).getImage_URL())
+                .load(mRecipes.get(i).getImage_url())
                 .into(((RecipeViewHolder) viewHolder).image);
 
         ((RecipeViewHolder)viewHolder).title.setText(mRecipes.get(i).getTitle());
         ((RecipeViewHolder)viewHolder).publisher.setText(mRecipes.get(i).getPublisher());
-        ((RecipeViewHolder)viewHolder).socialScore.setText(String.valueOf(Math.round(Float.parseFloat(mRecipes.get(i).getRating()))));
+        ((RecipeViewHolder)viewHolder).socialScore.setText(String.valueOf(Math.round(mRecipes.get(i).getSocial_rank())));
     }
 
     @Override
     public int getItemCount() {
-        return mRecipes.size();
+        if(mRecipes!=null){
+            return mRecipes.size();
+        }
+        else{
+            return 0;
+        }
+
     }
 
     public void setRecipes(List<Recipe> recipes){
