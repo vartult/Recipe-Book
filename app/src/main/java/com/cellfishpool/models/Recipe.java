@@ -9,15 +9,15 @@ public class Recipe implements Parcelable {
     private String publisher;
     private String[] ingredients;
     private String Image_URL;
-    private String Raing;
+    private String Rating;
     private String Recipe_Id;
     private String title;
 
-    public Recipe(String publisher, String[] ingredients, String image_URL, String raing, String recipe_Id, String title) {
+    public Recipe(String publisher, String[] ingredients, String image_URL, String rating, String recipe_Id, String title) {
         this.publisher = publisher;
         this.ingredients = ingredients;
         Image_URL = image_URL;
-        Raing = raing;
+        Rating = rating;
         Recipe_Id = recipe_Id;
         this.title = title;
     }
@@ -26,7 +26,7 @@ public class Recipe implements Parcelable {
         publisher = in.readString();
         ingredients = in.createStringArray();
         Image_URL = in.readString();
-        Raing = in.readString();
+        Rating = in.readString();
         Recipe_Id = in.readString();
         title = in.readString();
     }
@@ -67,12 +67,12 @@ public class Recipe implements Parcelable {
         Image_URL = image_URL;
     }
 
-    public String getRaing() {
-        return Raing;
+    public String getRating() {
+        return Rating;
     }
 
-    public void setRaing(String raing) {
-        Raing = raing;
+    public void setRating(String rating) {
+        Rating = rating;
     }
 
     public String getRecipe_Id() {
@@ -100,7 +100,7 @@ public class Recipe implements Parcelable {
                 "publisher='" + publisher + '\'' +
                 ", ingredients=" + Arrays.toString(ingredients) +
                 ", Image_URL='" + Image_URL + '\'' +
-                ", Raing='" + Raing + '\'' +
+                ", rating='" + Rating + '\'' +
                 ", Recipe_Id='" + Recipe_Id + '\'' +
                 ", title='" + title + '\'' +
                 '}';
@@ -116,7 +116,7 @@ public class Recipe implements Parcelable {
         dest.writeString(publisher);
         dest.writeStringArray(ingredients);
         dest.writeString(Image_URL);
-        dest.writeString(Raing);
+        dest.writeString(Rating);
         dest.writeString(Recipe_Id);
         dest.writeString(title);
     }
