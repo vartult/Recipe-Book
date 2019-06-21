@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SearchView;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -36,7 +37,7 @@ public class RecipeListActivity extends Base_Activity implements OnRecipeListene
 
         initRecyclerView();
         subscribeObservers();
-        testRetrofitRequest();
+        initSearchView();
 
     }
 
@@ -53,10 +54,6 @@ public class RecipeListActivity extends Base_Activity implements OnRecipeListene
         });
     }
 
-    private void searchRecipeApi(String query, Integer pageNumber){
-
-        mRecipeListViewModel.searchRecipesApi(query,pageNumber);
-    }
 
     private void initRecyclerView(){
         mAdapter = new RecipeRecyclerAdapter(this);
@@ -64,9 +61,7 @@ public class RecipeListActivity extends Base_Activity implements OnRecipeListene
         recipe_list.setLayoutManager(new LinearLayoutManager(this));
     }
 
-    private void testRetrofitRequest(){
-        searchRecipeApi("Bread",1);
-    }
+
 
     @Override
     public void onRecipeClick(int position) {
@@ -76,5 +71,24 @@ public class RecipeListActivity extends Base_Activity implements OnRecipeListene
     @Override
     public void onCategoryClick(String category) {
 
+    }
+
+    private void initSearchView(){
+        final SearchView searchView = findViewById(R.id.search_view);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+
+                mRecipeListViewModel.searchRecipesApi(query,1);
+
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String query) {
+
+                return false;
+            }
+        });
     }
 }
