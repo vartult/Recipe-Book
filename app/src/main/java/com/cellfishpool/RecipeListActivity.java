@@ -10,6 +10,7 @@ import android.support.v7.widget.SearchView;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.cellfishpool.adapters.OnRecipeListener;
 import com.cellfishpool.adapters.RecipeRecyclerAdapter;
@@ -38,6 +39,11 @@ public class RecipeListActivity extends Base_Activity implements OnRecipeListene
         initRecyclerView();
         subscribeObservers();
         initSearchView();
+        if(!mRecipeListViewModel.ismIsViewingRecipes()){
+            //Toast.makeText(getApplicationContext(),"Mil Gya",Toast.LENGTH_LONG).show();
+            //display category
+            displaySearchCategories();
+        }
 
     }
 
@@ -70,6 +76,8 @@ public class RecipeListActivity extends Base_Activity implements OnRecipeListene
 
     @Override
     public void onCategoryClick(String category) {
+        mAdapter.displayLoading();
+        mRecipeListViewModel.searchRecipesApi(category,1);
 
     }
 
@@ -91,5 +99,10 @@ public class RecipeListActivity extends Base_Activity implements OnRecipeListene
                 return false;
             }
         });
+    }
+
+    private void displaySearchCategories(){
+        mRecipeListViewModel.setmIsViewingRecipes(false);
+        mAdapter.displaySearchCategories();
     }
 }

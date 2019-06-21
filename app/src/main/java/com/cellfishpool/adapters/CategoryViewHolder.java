@@ -7,6 +7,8 @@ import android.widget.TextView;
 
 import com.cellfishpool.R;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class CategoryViewHolder extends RecyclerView.ViewHolder implements
         View.OnClickListener
 {
