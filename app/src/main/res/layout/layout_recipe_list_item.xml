@@ -17,11 +17,12 @@
             android:orientation="vertical">
 
             <ImageView
+
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/recipe_image_height"
                 android:scaleType="centerCrop"
                 android:id="@+id/recipe_image"
-                android:src="@drawable/ic_launcher_background"/>
+                android:src="@drawable/imagenotfound"/>
 
 
             <LinearLayout
