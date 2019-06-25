@@ -16,6 +16,7 @@ import com.cellfishpool.adapters.OnRecipeListener;
 import com.cellfishpool.adapters.RecipeRecyclerAdapter;
 import com.cellfishpool.adapters.RecipeViewHolder;
 import com.cellfishpool.models.Recipe;
+import com.cellfishpool.util.VerticalSpacingItemDecor;
 import com.cellfishpool.viewmodel.RecipeListViewModel;
 import java.util.List;
 
@@ -62,6 +63,8 @@ public class RecipeListActivity extends Base_Activity implements OnRecipeListene
 
 
     private void initRecyclerView(){
+        VerticalSpacingItemDecor itemDecorator = new VerticalSpacingItemDecor(30);
+        recipe_list.addItemDecoration(itemDecorator);
         mAdapter = new RecipeRecyclerAdapter(this);
         recipe_list.setAdapter(mAdapter);
         recipe_list.setLayoutManager(new LinearLayoutManager(this));
