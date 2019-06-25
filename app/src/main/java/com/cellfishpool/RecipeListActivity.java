@@ -61,7 +61,7 @@ public class RecipeListActivity extends Base_Activity implements OnRecipeListene
             }
         });
     }
-    
+
     private void initRecyclerView(){
         VerticalSpacingItemDecor itemDecorator = new VerticalSpacingItemDecor(30);
         recipe_list.addItemDecoration(itemDecorator);
