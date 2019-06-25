@@ -20,7 +20,7 @@ public class RecipeListViewModel extends ViewModel {
     //private MutableLiveData<List<Recipe>> mRecipes = new MutableLiveData<>();
 
     public RecipeListViewModel() {
-        mIsViewingRecipes = false;
+        //mIsViewingRecipes = false;
         mRecipeRepository= RecipeRepository.getInstance();
     }
 
@@ -37,6 +37,13 @@ public class RecipeListViewModel extends ViewModel {
     }
     public void setmIsViewingRecipes(boolean isViewingRecipes){
         mIsViewingRecipes = isViewingRecipes;
+    }
+    public boolean onBackPressed(){
+        if(mIsViewingRecipes){
+            mIsViewingRecipes=false;
+            return false;
+        }
+        return true;
     }
 
 }

@@ -108,4 +108,14 @@ public class RecipeListActivity extends Base_Activity implements OnRecipeListene
         mRecipeListViewModel.setmIsViewingRecipes(false);
         mAdapter.displaySearchCategories();
     }
+
+    @Override
+    public void onBackPressed() {
+        if(mRecipeListViewModel.onBackPressed()){
+            super.onBackPressed();
+        }
+        else{
+            displaySearchCategories();
+        }
+    }
 }
