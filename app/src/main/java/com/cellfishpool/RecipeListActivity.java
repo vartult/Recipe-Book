@@ -54,14 +54,14 @@ public class RecipeListActivity extends Base_Activity implements OnRecipeListene
             @Override
             public void onChanged(@Nullable List<Recipe> recipes) {
                 if(recipes!=null){
-                    mAdapter.setRecipes(recipes);
+                    if(mRecipeListViewModel.ismIsViewingRecipes())
+                        mAdapter.setRecipes(recipes);
                 }
 
             }
         });
     }
-
-
+    
     private void initRecyclerView(){
         VerticalSpacingItemDecor itemDecorator = new VerticalSpacingItemDecor(30);
         recipe_list.addItemDecoration(itemDecorator);
