@@ -110,4 +110,10 @@ public class RecipeAPIClient {
             Log.d("hello","Cancel Request: Cancelling the search query");
         }
     }
+
+    public void cancelRequest(){
+        if(mretrieveRecipesRunnable!=null){
+            mretrieveRecipesRunnable.cancelRequest();
+        }
+    }
 }
