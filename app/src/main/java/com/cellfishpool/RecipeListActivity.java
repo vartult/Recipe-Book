@@ -2,6 +2,7 @@ package com.cellfishpool;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -86,6 +87,15 @@ public class RecipeListActivity extends Base_Activity implements OnRecipeListene
         mAdapter = new RecipeRecyclerAdapter(this);
         recipe_list.setAdapter(mAdapter);
         recipe_list.setLayoutManager(new LinearLayoutManager(this));
+
+        recipe_list.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
+                if(recipe_list.canScrollVertically(1)){
+
+                }
+            }
+        });
     }
 
 
