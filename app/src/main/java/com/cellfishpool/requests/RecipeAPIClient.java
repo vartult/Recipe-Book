@@ -107,7 +107,7 @@ public class RecipeAPIClient {
         }
 
         private void cancelRequest(){
-            Log.d("hello","Cancel Request: Cancelling the search query");
+            Log.d("Hello","Cancel Request: Cancelling the search query");
         }
     }
 
