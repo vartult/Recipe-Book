@@ -107,6 +107,7 @@ public class RecipeListActivity extends Base_Activity implements OnRecipeListene
     public void onCategoryClick(String category) {
         mAdapter.displayLoading();
         mRecipeListViewModel.searchRecipesApi(category,1);
+        mSearchView.clearFocus();
 
     }
 
