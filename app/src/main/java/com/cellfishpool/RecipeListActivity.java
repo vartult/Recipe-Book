@@ -89,7 +89,7 @@ public class RecipeListActivity extends Base_Activity implements OnRecipeListene
         recipe_list.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
-                if(recipe_list.canScrollVertically(1)){
+                if(!recipe_list.canScrollVertically(1)){
                     mRecipeListViewModel.search_more();
                 }
             }
