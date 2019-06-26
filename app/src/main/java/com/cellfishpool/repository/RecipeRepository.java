@@ -12,6 +12,8 @@ public class RecipeRepository {
 
     private static RecipeRepository instance;
     private RecipeAPIClient mRecipeApiClient;
+    private static int page;
+    private static String query;
 
     public static RecipeRepository getInstance(){
         if(instance == null){
