@@ -23,6 +23,7 @@ public class RecipeAPIClient {
     private static RecipeAPIClient instance;
     private MutableLiveData<List<Recipe>> mRecipes;
     private RetrieveRecipesRunnable mretrieveRecipesRunnable;
+    private MutableLiveData<List<Recipe>> mRecipe;
 
     public static RecipeAPIClient getInstance(){
         if(instance == null){
@@ -32,7 +33,9 @@ public class RecipeAPIClient {
     }
 
     private RecipeAPIClient() {
+
         mRecipes = new MutableLiveData<>();
+        mRecipe = new MutableLiveData<>();
     }
 
     public LiveData<List<Recipe>> getRecipes(){
@@ -110,6 +113,65 @@ public class RecipeAPIClient {
             Log.d("Hello","Cancel Request: Cancelling the search query");
         }
     }
+
+
+    private class RetrieveRecipeRunnable implements Runnable{
+        private String query;
+        private int pageNumber;
+        boolean cancel_req;
+
+        public RetrieveRecipeRunnable(String query, int pageNumber) {
+            this.query = query;
+            this.pageNumber = pageNumber;
+            cancel_req=false;
+        }
+
+        @Override
+        public void run() {
+            try {
+                Response response=getRecipes(query,pageNumber).execute();
+                if(cancel_req==true){
+                    return;
+                }
+                if(response.code()==200){
+                    List<Recipe> list = new ArrayList<>(((RecipeSearchResponse)response.body()).getRecipes());
+                    if(pageNumber==1){
+                        mRecipes.postValue(list);
+                    }
+                    else {
+                        List<Recipe> currentRecipe = mRecipes.getValue();
+                        currentRecipe.addAll(list);
+
+                        mRecipes.postValue(currentRecipe);
+                    }
+                }
+                else{
+                    String error = response.errorBody().string();
+                    Log.e("Hello", "run: "+error);
+                    mRecipes.postValue(null);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+                mRecipes.postValue(null);
+            }
+        }
+
+        private Call<RecipeSearchResponse> getRecipes(String query,int pageNumber){
+            return ServiceGenerator.getRecipeApi().searchRecipe(
+                    Constants.API_Key,
+                    query,
+                    String.valueOf(pageNumber)
+            );
+        }
+
+        private void cancelRequest(){
+            Log.d("Hello","Cancel Request: Cancelling the search query");
+        }
+    }
+
+
+
+
 
     public void cancelRequest(){
         if(mretrieveRecipesRunnable!=null){
