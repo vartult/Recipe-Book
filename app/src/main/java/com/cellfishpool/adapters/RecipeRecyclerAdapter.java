@@ -151,4 +151,13 @@ public class RecipeRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.Vie
         mRecipes = categories;
         notifyDataSetChanged();
     }
+
+    public Recipe getSelectedRecipe(int position){
+        if(mRecipes!=null){
+            if(mRecipes.size()>0){
+                return mRecipes.get(position);
+            }
+        }
+        return null;
+    }
 }

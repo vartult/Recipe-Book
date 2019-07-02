@@ -2,6 +2,7 @@ package com.cellfishpool;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.os.Bundle;
@@ -100,7 +101,9 @@ public class RecipeListActivity extends Base_Activity implements OnRecipeListene
 
     @Override
     public void onRecipeClick(int position) {
-
+        Intent intent=new Intent(this, Recipe_Activity.class);
+        intent.putExtra("recipe",mAdapter.getSelectedRecipe(position));
+        startActivity(intent);
     }
 
     @Override
@@ -144,6 +147,8 @@ public class RecipeListActivity extends Base_Activity implements OnRecipeListene
             displaySearchCategories();
         }
     }
+
+
 
 
 }
