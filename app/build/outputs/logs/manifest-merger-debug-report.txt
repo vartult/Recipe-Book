@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-23:12
+ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-25:12
 MERGED from [com.android.support:design:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/acaccae8459b0b33ad1fa220ecaa94a0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/25a6a9b4dbc2d6cd02f5e41001887e0f/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/vartul/.gradle/caches/transforms-2/files-2.1/74bc19f60d63e1ebf845c8fe90372a75/AndroidManifest.xml:2:1-11:12
@@ -40,20 +40,20 @@ MERGED from [com.android.support:documentfile:28.0.0] /home/vartul/.gradle/cache
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/5bb361faad577d44118de32a26eb79ff/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:print:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/b3de7d90ba09ccf4f719768a6e95e85a/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/a2ebece80176a88d2600ff8b4658d6ff/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-25:12
 	package
 		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:3:5-31
 		INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
 		INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
-		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-23:12
+		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-25:12
 		INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
-		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-23:12
+		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:1-25:12
 		INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:2:11-69
@@ -62,7 +62,7 @@ ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidMan
 	android:name
 		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:6:5-21:19
+ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:6:5-23:19
 MERGED from [com.android.support:design:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/acaccae8459b0b33ad1fa220ecaa94a0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] /home/vartul/.gradle/caches/transforms-2/files-2.1/acaccae8459b0b33ad1fa220ecaa94a0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/vartul/.gradle/caches/transforms-2/files-2.1/74bc19f60d63e1ebf845c8fe90372a75/AndroidManifest.xml:9:5-20
@@ -111,6 +111,10 @@ category#android.intent.category.LAUNCHER
 ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:18:17-77
 	android:name
 		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:18:27-74
+activity#com.cellfishpool.Recipe_Activity
+ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:21:9-22:20
+	android:name
+		ADDED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml:21:19-50
 uses-sdk
 INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/vartul/AndroidStudioProjects/RecipeBook/app/src/main/AndroidManifest.xml
