@@ -58,7 +58,10 @@ public class Recipe_Activity extends Base_Activity {
                     for (String Ing : recipe.getIngredients()) {
                         Log.d("Hello Ing", Ing);
                     }*/
-                    setRecipeProperties(recipe);
+                    if(recipe.getRecipe_id().equals(mRecipeViewModel.getRecipeID())){
+                        setRecipeProperties(recipe);
+                    }
+
                 }
             }
         });

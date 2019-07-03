@@ -14,11 +14,6 @@ public class RecipeRepository {
     private RecipeAPIClient mRecipeApiClient;
     private int mPage;
     private  String mQuery;
-    private  String RecipeID;
-
-    public String getRecipeID() {
-        return RecipeID;
-    }
 
     public static RecipeRepository getInstance(){
         if(instance == null){
@@ -49,8 +44,6 @@ public class RecipeRepository {
     }
 
     public void searchRecipebyID(String Recipe_id){
-
-        RecipeID=Recipe_id;
         mRecipeApiClient.searchRecipeById(Recipe_id);
     }
 

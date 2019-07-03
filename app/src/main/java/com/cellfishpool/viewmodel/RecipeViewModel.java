@@ -10,6 +10,12 @@ import com.cellfishpool.requests.responses.RecipeResponse;
 public class RecipeViewModel extends ViewModel {
 
     private RecipeRepository mRecipeRepository;
+    private  String RecipeID;
+
+    public String getRecipeID() {
+        return RecipeID;
+    }
+
 
     public RecipeViewModel() {
         mRecipeRepository= RecipeRepository.getInstance();
@@ -20,6 +26,7 @@ public class RecipeViewModel extends ViewModel {
     }
 
     public void searchRecipeById(String recipeId){
+        RecipeID=recipeId;
         mRecipeRepository.searchRecipebyID(recipeId);
     }
 
