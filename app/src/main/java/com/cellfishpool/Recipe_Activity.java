@@ -47,7 +47,6 @@ public class Recipe_Activity extends Base_Activity {
         subscribeObservers();
         getComingIntent();
     }
-
     private void subscribeObservers() {
         mRecipeViewModel.getRecipe().observe(this, new Observer<Recipe>() {
             @Override
