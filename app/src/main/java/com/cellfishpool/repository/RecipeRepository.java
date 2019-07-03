@@ -36,7 +36,7 @@ public class RecipeRepository {
         }
         mPage=pageNumber;
         mQuery=query;
-        mRecipeApiClient.searchRecipesAPI(query, pageNumber);
+        mRecipeApiClient.searchRecipesApi(query, pageNumber);
     }
 
     public void search_more(){
